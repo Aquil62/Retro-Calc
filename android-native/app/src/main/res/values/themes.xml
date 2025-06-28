@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.RetroCalculator" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorPrimaryContainer">@color/primary_dark</item>
-        <item name="colorOnPrimaryContainer">@color/white</item>
-        <item name="colorSecondary">@color/accent</item>
-        <item name="colorOnSecondary">@color/dark_blue</item>
-        <item name="colorSecondaryContainer">@color/accent_dark</item>
-        <item name="colorOnSecondaryContainer">@color/dark_blue</item>
-        <item name="colorTertiary">@color/dark_blue</item>
-        <item name="colorOnTertiary">@color/white</item>
-        <item name="colorError">@color/error</item>
-        <item name="colorOnError">@color/white</item>
-        <item name="colorErrorContainer">@color/error</item>
-        <item name="colorOnErrorContainer">@color/white</item>
-        <item name="colorOutline">@color/primary</item>
-        <item name="colorSurface">@color/bg_card</item>
-        <item name="colorOnSurface">@color/white</item>
-        <item name="colorSurfaceVariant">@color/bg_dark</item>
-        <item name="colorOnSurfaceVariant">@color/white</item>
-        <item name="colorBackground">@color/bg_dark</item>
-        <item name="colorOnBackground">@color/white</item>
-        <item name="android:statusBarColor">@color/bg_dark</item>
-        <item name="android:navigationBarColor">@color/bg_dark</item>
+    <style name="Theme.RetroCalculator" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#6B88D3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#5A77C2</item>
+        <item name="colorOnPrimaryContainer">#FFFFFF</item>
+        <item name="colorSecondary">#EFEFBB</item>
+        <item name="colorOnSecondary">#00008B</item>
+        <item name="colorSecondaryContainer">#DEDEAA</item>
+        <item name="colorOnSecondaryContainer">#00008B</item>
+        <item name="colorTertiary">#00008B</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorError">#EF4444</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorErrorContainer">#EF4444</item>
+        <item name="colorOnErrorContainer">#FFFFFF</item>
+        <item name="colorOutline">#6B88D3</item>
+        <item name="colorSurface">#1a1a2e</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorSurfaceVariant">#0a0a1a</item>
+        <item name="colorOnSurfaceVariant">#FFFFFF</item>
+        <item name="android:colorBackground">#0a0a1a</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="android:statusBarColor">#0a0a1a</item>
+        <item name="android:navigationBarColor">#0a0a1a</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
     </style>
@@ -32,7 +33,5 @@
     <style name="Theme.RetroCalculator.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowFullscreen">false</item>
-        <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>
