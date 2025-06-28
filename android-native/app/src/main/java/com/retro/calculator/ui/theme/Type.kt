@@ -7,11 +7,40 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 val Typography = Typography(
+    displayLarge = TextStyle(
+        fontFamily = FontFamily.Monospace,
+        fontWeight = FontWeight.Black,
+        fontSize = 32.sp,
+        letterSpacing = 0.2.sp
+    ),
+    displayMedium = TextStyle(
+        fontFamily = FontFamily.Monospace,
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp,
+        letterSpacing = 0.15.sp
+    ),
+    headlineLarge = TextStyle(
+        fontFamily = FontFamily.Monospace,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp,
+        letterSpacing = 0.1.sp
+    ),
     bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = FontFamily.Monospace,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
+        letterSpacing = 0.1.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = FontFamily.Monospace,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+        letterSpacing = 0.1.sp
+    ),
+    labelLarge = TextStyle(
+        fontFamily = FontFamily.Monospace,
+        fontWeight = FontWeight.Normal,
+        fontSize = 12.sp,
+        letterSpacing = 0.2.sp
     )
 )
