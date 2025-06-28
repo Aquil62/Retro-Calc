@@ -20,7 +20,6 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.rotate
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -28,15 +27,11 @@ import androidx.compose.ui.unit.sp
 import com.retro.calculator.ui.components.RetroButton
 import com.retro.calculator.ui.components.RobotCharacter
 import com.retro.calculator.ui.theme.*
-import com.retro.calculator.utils.HapticFeedback
 
 @Composable
 fun LandingScreen(
     onEnterCalculator: () -> Unit
 ) {
-    val context = LocalContext.current
-    val haptic = remember { HapticFeedback(context) }
-    
     // Animation states
     val infiniteTransition = rememberInfiniteTransition(label = "landing_animations")
     
@@ -154,17 +149,10 @@ fun LandingScreen(
             
             // Enter button with pulse animation
             RetroButton(
-                onClick = {
-                    haptic.performHapticFeedback()
-                    onEnterCalculator()
-                },
+                onClick = onEnterCalculator,
                 modifier = Modifier
                     .scale(buttonPulse)
-                    .padding(horizontal = 32.dp),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = Primary,
-                    contentColor = Color.White
-                )
+                    .padding(horizontal = 32.dp)
             ) {
                 Icon(
                     imageVector = Icons.Default.RocketLaunch,

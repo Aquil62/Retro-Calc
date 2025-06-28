@@ -18,7 +18,6 @@ fun RetroButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    colors: ButtonColors = ButtonDefaults.buttonColors(),
     content: @Composable RowScope.() -> Unit
 ) {
     Button(
@@ -46,33 +45,6 @@ fun RetroButton(
             disabledContainerColor = Color.Transparent,
             disabledContentColor = Color.Gray
         ),
-        contentPadding = PaddingValues(horizontal = 24.dp, vertical = 12.dp),
-        content = content
-    )
-}
-
-@Composable
-fun RetroOutlinedButton(
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier,
-    enabled: Boolean = true,
-    content: @Composable RowScope.() -> Unit
-) {
-    OutlinedButton(
-        onClick = onClick,
-        modifier = modifier
-            .clip(RoundedCornerShape(12.dp))
-            .border(
-                width = 2.dp,
-                color = if (enabled) Primary else Color.Gray,
-                shape = RoundedCornerShape(12.dp)
-            ),
-        enabled = enabled,
-        colors = ButtonDefaults.outlinedButtonColors(
-            contentColor = if (enabled) Primary else Color.Gray,
-            disabledContentColor = Color.Gray
-        ),
-        border = null,
         contentPadding = PaddingValues(horizontal = 24.dp, vertical = 12.dp),
         content = content
     )
