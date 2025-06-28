@@ -18,27 +18,13 @@ import androidx.core.view.WindowCompat
 private val DarkColorScheme = darkColorScheme(
     primary = Primary,
     secondary = Accent,
-    tertiary = DarkBlue,
-    background = BgDark,
-    surface = BgCard,
-    onPrimary = OnPrimary,
-    onSecondary = OnAccent,
-    onTertiary = OnPrimary,
-    onBackground = OnSurface,
-    onSurface = OnSurface,
+    tertiary = DarkBlue
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Primary,
     secondary = Accent,
-    tertiary = DarkBlue,
-    background = BgDark,
-    surface = BgCard,
-    onPrimary = OnPrimary,
-    onSecondary = OnAccent,
-    onTertiary = OnPrimary,
-    onBackground = OnSurface,
-    onSurface = OnSurface,
+    tertiary = DarkBlue
 )
 
 @Composable
@@ -60,8 +46,8 @@ fun RetroCalculatorTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.background.toArgb()
-            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false
+            window.statusBarColor = colorScheme.primary.toArgb()
+            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }
 
