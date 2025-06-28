@@ -11,9 +11,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        // Add JCenter as fallback for older dependencies
-        @Suppress("DEPRECATION")
-        jcenter()
     }
 }
 
